@@ -1,0 +1,44 @@
+body {
+  background-color: hsl(212deg, 45%, 89%);
+  font-family: "Outfit";
+  margin: 0;
+  height: 100vh;
+}
+body .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+body .container .card {
+  background-color: hsl(0deg, 0%, 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 20px;
+  padding: 20px;
+  margin: 0;
+  width: 400px;
+}
+body .container .card .img-holder img {
+  width: 400px;
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
+body .container .card .info-holder {
+  padding: 0 50px;
+}
+body .container .card .info-holder h2 {
+  color: hsl(218deg, 44%, 22%);
+  text-align: center;
+  margin-bottom: 20px;
+}
+body .container .card .info-holder p {
+  color: hsl(220deg, 15%, 55%);
+  font-size: 15px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+/*# sourceMappingURL=style.css.map */
