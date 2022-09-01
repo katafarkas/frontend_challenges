@@ -3,52 +3,78 @@ $light_gray: hsl(212, 45%, 89%);
 $grayish_blue: hsl(220, 15%, 55%);
 $dark_blue: hsl(218, 44%, 22%);
 
+$mobile_view: 375px;
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
 body {
   background-color: $light_gray;
   font-family: "Outfit";
   margin: 0;
-  height: 100vh;
 
   .container {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100%;
+    min-height: 100%;
 
     .card {
-        background-color: $white;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        border-radius: 20px;
-        padding: 20px;
-        margin: 0;
-        width: 400px;
+      background-color: $white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      border-radius: 20px;
+      padding: 20px;
+      margin: 20px 0;
+      width: 400px;
 
-        .img-holder {
-            img {
-                width: 400px;
-                border-radius: 15px;
-                margin-bottom: 20px;
-            }
+      @media only screen and (max-width: $mobile_view) {
+        max-width: 300px;
+        padding: 15px;
+      }
+
+      .img-holder {
+        img {
+          width: 100%;
+          border-radius: 15px;
+          display: block;
+        }
+      }
+
+      .info-holder {
+        padding: 0 40px;
+
+        h2 {
+          color: $dark_blue;
+          text-align: center;
+          margin-bottom: 20px;
+
+          @media only screen and (max-width: $mobile_view) {
+            font-size: 18px;
+            padding: 0 20px;
+          }
         }
 
-        .info-holder {
-            padding: 0 50px;
-            h2 {
-                color: $dark_blue;
-                text-align: center;
-                margin-bottom: 20px;
-            }
+        p {
+          color: $grayish_blue;
+          font-size: 15px;
+          text-align: center;
+          margin-bottom: 40px;
 
-            p {
-                color: $grayish_blue;
-                font-size: 15px;
-                text-align: center;
-                margin-bottom: 40px;
-            }
+          @media only screen and (max-width: $mobile_view) {
+            font-size: 14px;
+            padding: 0 20px;
+          }
         }
+      }
     }
   }
 }
