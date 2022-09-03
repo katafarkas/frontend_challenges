@@ -1,0 +1,144 @@
+@import "colors";
+
+$mobile_view: 375px;
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background-color: white;
+  margin: 0;
+
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100%;
+
+    .card {
+      display: flex;
+      width: 800px;
+      margin: 30px auto;
+      border-radius: 10px;
+
+      @media only screen and (max-width: $mobile_view) {
+        width: 325px;
+        flex-direction: column;
+      }
+
+      h1 {
+        font-family: "Big Shoulders Display";
+        font-weight: 700;
+        font-size: 45px;
+        color: white;
+        margin: 0;
+        margin: 0 0 30px 0;
+
+        @media only screen and (max-width: $mobile_view) {
+          font-size: 35px;
+        }
+      }
+
+      .button {
+        background-color: white;
+        font-family: "Lexend Deca";
+        font-weight: 400;
+        border: none;
+        border-radius: 18px;
+        color: $very_dark_cyan;
+        padding: 10px 20px;
+        cursor: pointer;
+      }
+
+      p {
+        font-family: "Lexend Deca";
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 25px;
+        color: white;
+        width: 95%;
+
+        @media only screen and (max-width: $mobile_view) {
+          font-size: 12px;
+        }
+      }
+
+      .icon-holder {
+        margin: 0 0 30px 0;
+      }
+
+      .card-inner {
+        padding: 30px;
+        min-height: 450px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        @media only screen and (max-width: $mobile_view) {
+          min-height: 360px;
+        }
+      }
+
+      .sedans {
+        background-color: $bright_orange;
+        border-radius: 10px 0 0 10px;
+
+        .button {
+          color: $bright_orange;
+
+          &:hover {
+            background-color: $bright_orange;
+            color: white;
+            border: white solid 2px;
+            transition: all ease 1s;
+          }
+        }
+
+        @media only screen and (max-width: $mobile_view) {
+          border-radius: 10px 10px 0 0;
+        }
+      }
+
+      .suvs {
+        background-color: $dark_cyan;
+
+        .button {
+          color: $dark_cyan;
+
+          &:hover {
+            background-color: $dark_cyan;
+            color: white;
+            border: white solid 2px;
+            transition: all ease 1s;
+          }
+        }
+      }
+
+      .luxury {
+        background-color: $very_dark_cyan;
+        border-radius: 0 10px 10px 0;
+
+        .button {
+          color: $very_dark_cyan;
+
+          &:hover {
+            background-color: $very_dark_cyan;
+            color: white;
+            border: white solid 2px;
+            transition: all ease 1s;
+          }
+        }
+
+        @media only screen and (max-width: $mobile_view) {
+          border-radius: 0 0 10px 10px;
+        }
+      }
+    }
+  }
+}

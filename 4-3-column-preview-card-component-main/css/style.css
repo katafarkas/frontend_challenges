@@ -1,0 +1,132 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background-color: white;
+  margin: 0;
+}
+body .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100%;
+}
+body .container .card {
+  display: flex;
+  width: 800px;
+  margin: 30px auto;
+  border-radius: 10px;
+}
+@media only screen and (max-width: 375px) {
+  body .container .card {
+    width: 325px;
+    flex-direction: column;
+  }
+}
+body .container .card h1 {
+  font-family: "Big Shoulders Display";
+  font-weight: 700;
+  font-size: 45px;
+  color: white;
+  margin: 0;
+  margin: 0 0 30px 0;
+}
+@media only screen and (max-width: 375px) {
+  body .container .card h1 {
+    font-size: 35px;
+  }
+}
+body .container .card .button {
+  background-color: white;
+  font-family: "Lexend Deca";
+  font-weight: 400;
+  border: none;
+  border-radius: 18px;
+  color: hsl(179deg, 100%, 13%);
+  padding: 10px 20px;
+  cursor: pointer;
+}
+body .container .card p {
+  font-family: "Lexend Deca";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 25px;
+  color: white;
+  width: 95%;
+}
+@media only screen and (max-width: 375px) {
+  body .container .card p {
+    font-size: 12px;
+  }
+}
+body .container .card .icon-holder {
+  margin: 0 0 30px 0;
+}
+body .container .card .card-inner {
+  padding: 30px;
+  min-height: 450px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+@media only screen and (max-width: 375px) {
+  body .container .card .card-inner {
+    min-height: 360px;
+  }
+}
+body .container .card .sedans {
+  background-color: hsl(31deg, 77%, 52%);
+  border-radius: 10px 0 0 10px;
+}
+body .container .card .sedans .button {
+  color: hsl(31deg, 77%, 52%);
+}
+body .container .card .sedans .button:hover {
+  background-color: hsl(31deg, 77%, 52%);
+  color: white;
+  border: white solid 2px;
+  transition: all ease 1s;
+}
+@media only screen and (max-width: 375px) {
+  body .container .card .sedans {
+    border-radius: 10px 10px 0 0;
+  }
+}
+body .container .card .suvs {
+  background-color: hsl(184deg, 100%, 22%);
+}
+body .container .card .suvs .button {
+  color: hsl(184deg, 100%, 22%);
+}
+body .container .card .suvs .button:hover {
+  background-color: hsl(184deg, 100%, 22%);
+  color: white;
+  border: white solid 2px;
+  transition: all ease 1s;
+}
+body .container .card .luxury {
+  background-color: hsl(179deg, 100%, 13%);
+  border-radius: 0 10px 10px 0;
+}
+body .container .card .luxury .button {
+  color: hsl(179deg, 100%, 13%);
+}
+body .container .card .luxury .button:hover {
+  background-color: hsl(179deg, 100%, 13%);
+  color: white;
+  border: white solid 2px;
+  transition: all ease 1s;
+}
+@media only screen and (max-width: 375px) {
+  body .container .card .luxury {
+    border-radius: 0 0 10px 10px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
