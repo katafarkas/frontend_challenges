@@ -1,0 +1,138 @@
+body {
+  background-color: black;
+  font-family: "Overpass";
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+}
+body .container {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .container .card {
+  display: flex;
+  justify-content: center;
+  height: 300px;
+  width: 300px;
+  flex-direction: column;
+  text-align: left;
+  background-image: linear-gradient(hsl(213deg, 19%, 18%), hsl(216deg, 12%, 8%));
+  border-radius: 15px;
+  padding: 25px;
+}
+@media only screen and (max-width: 375px) {
+  body .container .card {
+    margin: 0 20px;
+  }
+}
+body .container .card #rate-side .star-holder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(213deg, 19%, 18%);
+  width: fit-content;
+  width: 20px;
+  height: 20px;
+  padding: 10px;
+  border-radius: 100%;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+body .container .card #rate-side .star-holder img {
+  width: 10px;
+  height: 10px;
+}
+body .container .card #rate-side h1 {
+  color: white;
+  font-size: 22px;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+@media only screen and (max-width: 375px) {
+  body .container .card #rate-side h1 {
+    font-size: 20px;
+  }
+}
+body .container .card #rate-side p {
+  color: hsl(216deg, 12%, 54%);
+  font-size: 15px;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+@media only screen and (max-width: 375px) {
+  body .container .card #rate-side p {
+    font-size: 14px;
+  }
+}
+body .container .card #rate-side .buttons {
+  margin-top: 0;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+body .container .card #rate-side .buttons button {
+  color: hsl(216deg, 12%, 54%);
+  background-color: hsl(213deg, 19%, 18%);
+  border-style: none;
+  font-family: "Overpass";
+  border-radius: 100%;
+  width: 40px;
+  height: 40px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0;
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+body .container .card #rate-side .buttons button span {
+  height: 14px;
+}
+body .container .card #rate-side .buttons button.selected {
+  color: white;
+  background-color: hsl(217deg, 12%, 63%);
+}
+body .container .card #rate-side .buttons button:hover:not(.selected) {
+  background-color: hsl(25deg, 97%, 53%);
+  color: hsl(0deg, 0%, 100%);
+  transition: all ease 0.2s;
+}
+body .container .card #rate-side .submit {
+  background-color: hsl(25deg, 97%, 53%);
+  color: white;
+  width: 100%;
+  font-family: "Overpass";
+  font-weight: 700;
+  border-style: none;
+  border-radius: 20px;
+  padding: 10px 0;
+  cursor: pointer;
+}
+body .container .card #rate-side .submit:hover {
+  background-color: hsl(0deg, 0%, 100%);
+  color: hsl(25deg, 97%, 53%);
+  transition: all ease 0.2s;
+}
+body .container .card #thank-you-side {
+  display: none;
+  text-align: center;
+}
+body .container .card #thank-you-side .message {
+  color: hsl(25deg, 97%, 53%);
+  background-color: hsl(213deg, 19%, 18%);
+  border-radius: 10px;
+  padding: 5px;
+  font-size: 13px;
+}
+body .container .card #thank-you-side h1 {
+  color: hsl(0deg, 0%, 100%);
+}
+body .container .card #thank-you-side .info {
+  color: hsl(217deg, 12%, 63%);
+  font-size: 13px;
+}
+
+/*# sourceMappingURL=style.css.map */
