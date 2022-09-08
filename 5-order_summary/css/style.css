@@ -1,0 +1,145 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0 auto;
+  font-family: "Red Hat Display";
+  background-color: hsl(225deg, 100%, 94%);
+}
+body #pattern {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+}
+body .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100%;
+}
+body .container .card {
+  background-color: white;
+  max-width: 350px;
+  border-radius: 15px;
+}
+@media only screen and (max-width: 375px) {
+  body .container .card {
+    width: 325px;
+  }
+}
+body .container .card .img-holder img {
+  width: 100%;
+  margin: 0;
+  border-radius: 15px 15px 0 0;
+}
+body .container .card .info-holder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 30px;
+}
+body .container .card .info-holder h1 {
+  font-weight: 900;
+  color: hsl(223deg, 47%, 23%);
+  font-size: 25px;
+  margin: 0;
+  margin-bottom: 20px;
+}
+body .container .card .info-holder p {
+  font-weight: 500;
+  color: hsl(224deg, 23%, 55%);
+  text-align: center;
+  font-size: 14px;
+  margin: 0;
+  margin-bottom: 20px;
+}
+body .container .card .info-holder .box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: hsl(225deg, 100%, 98%);
+  width: 100%;
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+body .container .card .info-holder .box .icon-plan {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .container .card .info-holder .box .icon-plan .icon {
+  margin-right: 10px;
+}
+body .container .card .info-holder .box .icon-plan .plan {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+body .container .card .info-holder .box .icon-plan .plan h3 {
+  color: hsl(223deg, 47%, 23%);
+  font-size: 14px;
+  font-weight: 900;
+  margin: 0;
+  margin-bottom: 5px;
+}
+body .container .card .info-holder .box .icon-plan .plan p {
+  color: hsl(224deg, 23%, 55%);
+  font-size: 13px;
+  font-weight: 500;
+  margin: 0;
+}
+body .container .card .info-holder .box .change {
+  background-color: hsl(225deg, 100%, 98%);
+  border: none;
+  color: hsl(245deg, 75%, 52%);
+  font-weight: 700;
+  text-decoration: underline;
+  font-size: 13px;
+  cursor: pointer;
+}
+body .container .card .info-holder .box .change:hover {
+  color: hsla(245deg, 75%, 52%, 0.532);
+  text-decoration: none;
+  transition: all ease 0.2s;
+}
+body .container .card .info-holder .proceed {
+  background-color: hsl(245deg, 75%, 52%);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  width: 100%;
+  font-weight: 700;
+  font-size: 13px;
+  padding: 10px 0;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+body .container .card .info-holder .proceed:hover {
+  background-color: hsla(245deg, 75%, 52%, 0.532);
+  transition: all ease 0.2s;
+}
+body .container .card .info-holder .cancel {
+  background-color: white;
+  color: hsl(224deg, 23%, 55%);
+  border: none;
+  border-radius: 10px;
+  width: 100%;
+  font-weight: 700;
+  font-size: 13px;
+  cursor: pointer;
+}
+body .container .card .info-holder .cancel:hover {
+  color: hsl(223deg, 47%, 23%);
+  transition: all ease 0.2s;
+}
+
+/*# sourceMappingURL=style.css.map */
