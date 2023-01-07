@@ -1,0 +1,119 @@
+body {
+  margin: 0;
+}
+body .container {
+  display: flex;
+  background-color: hsl(30deg, 38%, 92%);
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+@media only screen and (max-width: 375px) {
+  body .container {
+    height: auto;
+    width: auto;
+    padding: 10px;
+  }
+}
+body .container .product-card-holder {
+  display: flex;
+  width: 500px;
+  background-color: white;
+  border-radius: 10px;
+}
+@media only screen and (max-width: 375px) {
+  body .container .product-card-holder {
+    flex-direction: column;
+  }
+}
+body .container .product-card-holder .img-holder {
+  flex: 1;
+}
+body .container .product-card-holder .img-holder img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px 0 0 10px;
+}
+@media only screen and (max-width: 375px) {
+  body .container .product-card-holder .img-holder img {
+    border-radius: 10px 10px 0 0;
+  }
+}
+body .container .product-card-holder .info-holder {
+  flex: 1;
+}
+body .container .product-card-holder .info-holder .info-inner {
+  padding: 25px;
+}
+body .container .product-card-holder .info-holder .info-inner h3 {
+  font-family: "Montserrat";
+  font-weight: 500;
+  letter-spacing: 5px;
+  font-size: 12px;
+  text-transform: uppercase;
+  margin-top: 0;
+  color: hsl(228deg, 12%, 48%);
+}
+body .container .product-card-holder .info-holder .info-inner h1 {
+  font-family: "Fraunces";
+  font-size: 26px;
+  color: hsl(212deg, 21%, 14%);
+}
+body .container .product-card-holder .info-holder .info-inner p {
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 20px;
+  color: hsl(228deg, 12%, 48%);
+  width: 90%;
+}
+@media only screen and (max-width: 375px) {
+  body .container .product-card-holder .info-holder .info-inner p {
+    width: 85%;
+  }
+}
+body .container .product-card-holder .info-holder .info-inner .price-holder {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+}
+body .container .product-card-holder .info-holder .info-inner .price-holder h2 {
+  margin: 0 20px 0 0;
+  font-family: "Fraunces";
+  color: hsl(158deg, 36%, 37%);
+}
+body .container .product-card-holder .info-holder .info-inner .price-holder h4 {
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 11px;
+  color: hsl(228deg, 12%, 48%);
+  text-decoration: line-through;
+  margin: 0;
+}
+body .container .product-card-holder .info-holder .info-inner button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(158deg, 36%, 37%);
+  border: 0;
+  color: white;
+  width: 100%;
+  height: 40px;
+  border-radius: 7px;
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 11px;
+  transition: 0.2s ease all;
+  margin: 11px 0;
+}
+body .container .product-card-holder .info-holder .info-inner button:hover {
+  cursor: pointer;
+  background-color: hsl(158deg, 33%, 26%);
+}
+body .container .product-card-holder .info-holder .info-inner button span {
+  margin-left: 10px;
+}
+
+/*# sourceMappingURL=style.css.map */

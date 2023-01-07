@@ -1,0 +1,131 @@
+@import "colors";
+
+$mobile_view: 375px;
+
+body {
+    margin: 0;
+    .container {
+        display: flex;
+        background-color: $cream;
+        width: 100vw;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+
+        @media only screen and (max-width: $mobile_view) {
+            height: auto;
+            width: auto;
+            padding: 10px;
+        }
+
+        .product-card-holder {
+            display: flex;
+            width: 500px;
+            background-color: white;
+            border-radius: 10px;
+
+            @media only screen and (max-width: $mobile_view) {
+                flex-direction: column;
+            }
+
+            .img-holder {
+                flex: 1;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    border-radius: 10px 0 0 10px;
+
+                    @media only screen and (max-width: $mobile_view) {
+                        border-radius: 10px 10px 0 0;
+                    }
+                }
+            }
+
+            .info-holder {
+                flex: 1;
+
+                .info-inner {
+                    padding: 25px;
+
+                    h3 {
+                        font-family: "Montserrat";
+                        font-weight: 500;
+                        letter-spacing: 5px;
+                        font-size: 12px;
+                        text-transform: uppercase;
+                        margin-top: 0;
+                        color: $dark_grayish_blue;
+                    }
+
+                    h1 {
+                        font-family: "Fraunces";
+                        font-size: 26px;
+                        color: $very_dark_blue;
+                    }
+
+                    p {
+                        font-family: "Montserrat";
+                        font-weight: 500;
+                        font-size: 11px;
+                        line-height: 20px;
+                        color: $dark_grayish_blue;
+                        width: 90%;
+
+                        @media only screen and (max-width: $mobile_view) {
+                            width: 85%;
+                        }
+                    }
+
+                    .price-holder {
+                        display: flex;
+                        align-items: center;
+                        margin: 20px 0;
+
+                        h2 {
+                            margin: 0 20px 0 0;
+                            font-family: "Fraunces";
+                            color: $dark_cyan;
+                        }
+
+                        h4 {
+                            font-family: "Montserrat";
+                            font-weight: 500;
+                            font-size: 11px;
+                            color: $dark_grayish_blue;
+                            text-decoration: line-through;
+                            margin: 0;
+                        }
+                    }
+
+                    button {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        background-color: $dark_cyan;
+                        border: 0;
+                        color: white;
+                        width: 100%;
+                        height: 40px;
+                        border-radius: 7px;
+                        font-family: "Montserrat";
+                        font-weight: 700;
+                        font-size: 11px;
+                        transition: .2s ease all;
+                        margin: 11px 0;
+
+                        &:hover {
+                            cursor: pointer;
+                            background-color: $darker_cyan;
+                        }
+                        
+                        span {
+                            margin-left: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
