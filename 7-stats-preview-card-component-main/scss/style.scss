@@ -1,0 +1,210 @@
+$very_dark_blue: hsl(233, 47%, 7%); //main background
+$dark_desaturated_blue: hsl(244, 38%, 16%); //card background
+$soft_violet: hsl(277, 64%, 61%); //accent
+$soft_violet_img: hsla(277, 64%, 61%, 0.479); //accent
+$white: hsl(0, 0%, 100%); //main heading, stats
+$slightly_transparent_white_1: hsla(0, 0%, 100%, 0.75); //main paragraph
+$slightly_transparent_white_2: hsla(0, 0%, 100%, 0.6); //stat headings
+
+$mobile_view: 375px;
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  min-height: 100vh;
+}
+
+body {
+  background-color: $very_dark_blue;
+  margin: 0 auto;
+  color: $slightly_transparent_white_1;
+  width: 100%;
+
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    @media only screen and (max-width: $mobile_view) {
+      padding: 15px;
+    }
+
+    .card {
+      background-color: $dark_desaturated_blue;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 400px;
+      width: 950px;
+      border-radius: 10px;
+
+      @media only screen and (max-width: $mobile_view) {
+        width: 325px;
+        flex-direction: column;
+        height: 100%;
+      }
+
+      .desktop {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+
+        @media only screen and (max-width: $mobile_view) {
+          flex-direction: column;
+        }
+
+        .info-holder {
+          width: 50%;
+          padding: 40px;
+          height: 100%;
+
+          @media only screen and (max-width: $mobile_view) {
+            width: 100%;
+            text-align: center;
+          }
+
+          h1 {
+            font-family: "Inter";
+            font-weight: 700;
+
+            span {
+              color: $soft_violet;
+            }
+
+            @media only screen and (max-width: $mobile_view) {
+              font-size: 25px;
+            }
+          }
+
+          p {
+            font-family: "Lexend Deca";
+            font-weight: 400;
+            color: $slightly_transparent_white_2;
+            font-size: 15px;
+            margin-bottom: 20px;
+
+            @media only screen and (max-width: $mobile_view) {
+              font-size: 14px;
+              margin-bottom: 20px;
+            }
+          }
+
+          .numbers {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 85%;
+
+            @media only screen and (max-width: $mobile_view) {
+              flex-direction: column;
+              width: 100%;
+              text-align: center;
+            }
+
+            .numbers-col {
+              display: flex;
+              justify-content: center;
+              flex-direction: column;
+
+              h2 {
+                font-family: "Inter";
+                font-weight: 700;
+                margin-bottom: 5px;
+
+                @media only screen and (max-width: $mobile_view) {
+                  font-size: 20px;
+                }
+              }
+
+              h4 {
+                font-family: "Lexend Deca";
+                font-weight: 400;
+                color: $slightly_transparent_white_2;
+                font-size: 12px;
+                text-transform: uppercase;
+                margin-top: 0;
+              }
+            }
+          }
+        }
+
+        .img-holder-mobile {
+          display: none;
+          position: relative;
+          box-sizing: border-box;
+
+          @media only screen and (max-width: $mobile_view) {
+            display: block;
+          }
+
+          .overlay {
+            background-color: $soft_violet_img;
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            border-radius: 0 10px 10px 0;
+
+            @media only screen and (max-width: $mobile_view) {
+              border-radius: 10px 10px 0 0;
+            }
+          }
+
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 0 10px 10px 0;
+            display: block;
+
+            @media only screen and (max-width: $mobile_view) {
+              border-radius: 10px 10px 0 0;
+            }
+          }
+        }
+
+        .img-holder-desktop {
+          width: 50%;
+          height: 100%;
+          position: relative;
+
+          @media only screen and (max-width: $mobile_view) {
+            display: none;
+          }
+
+          @media only screen and (max-width: $mobile_view) {
+            width: 100%;
+            height: 200px;
+          }
+
+          .overlay {
+            background-color: $soft_violet_img;
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            border-radius: 0 10px 10px 0;
+
+            @media only screen and (max-width: $mobile_view) {
+              border-radius: 10px 10px 0 0;
+            }
+          }
+
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 0 10px 10px 0;
+
+            @media only screen and (max-width: $mobile_view) {
+              border-radius: 10px 10px 0 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}
