@@ -1,0 +1,18 @@
+{
+  "title": "Contact Us",
+  "firstName": "First Name",
+  "lastName": "Last Name",
+  "email": "Email Address",
+  "type": "Query Type",
+  "first": "General Enquiry",
+  "second": "Support Request",
+  "message": "Message",
+  "checked": "I consent to being contacted by the team",
+  "submit": "Submit",
+  "required": "This field is required",
+  "invalidEmail": "Please enter a valid email address",
+  "picked": "Please select a query type",
+  "mustBeChecked": "To submit this form, please consent to being contacted",
+  "successTitle": "Message Sent!",
+  "successDescription": "Thanks for completing the form! We'll be in touch soon!"
+}
